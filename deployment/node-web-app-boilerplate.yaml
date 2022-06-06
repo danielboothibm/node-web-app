@@ -17,9 +17,6 @@ spec:
       - name: node-web-app
         image: __IMAGE__
         imagePullPolicy: Always
-        envFrom:
-        - configMapRef:
-            name: node-web-app-config
         ports:
         - containerPort: 8080
 ---
